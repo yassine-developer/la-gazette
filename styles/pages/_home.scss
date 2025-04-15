@@ -1,0 +1,158 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    .logo {
+        height: 161px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 15px;
+        margin-left: 18px;
+
+        a {
+
+            img {
+
+                height: 20px;
+                width: 190px;
+            }
+        }
+    }
+
+    .burger-menu-container {
+        border-top: 1px solid rgb(228, 228, 228);
+        height: 55px;
+        margin: 0 ;
+        padding: 0 15px;
+    }
+
+    .burger-menu {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 120px;
+        height: 35px;
+        background-color: rgb(255, 3, 3);
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+
+        .burger-menu-icon {
+            width: 18px;
+            height: 20px;
+            position: relative;
+            text-align: center;
+
+            span {
+                position: absolute;
+                background-color: #fff;
+                height: 3px;
+                width: 17px;
+            }
+
+            span:nth-child(1) {
+                top: 2px;
+            }
+
+            span:nth-child(2) {
+                top: 8px;
+            }
+
+            span:nth-child(3) {
+                top: 14px;
+            }
+
+        }
+
+        .burger-menu-text {
+            color: #fff;
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 400;
+        }
+    }
+}
+
+main {
+    .blog-header {
+
+        .blog-header-card {
+            background: url(../../img/bg-img/1.jpg) no-repeat center center / cover;
+            height: 380px;
+            position: relative;
+
+            .blog-header-card-text {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                z-index: 11;
+
+                h3 {
+                    margin-top: 5px;
+                    a {
+                        text-decoration: none;
+                        font-size: 12px;
+                        line-height: 18px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        color: #fff;
+                        background-color: rgb(255, 3, 3);
+                        padding: 2px 5px;
+                        letter-spacing: 2px;
+                        margin-bottom: 15px;
+                        display: inline-block;
+                    }
+                }
+                h2{
+                    a{
+                        font-family: "PT Serif", serif;
+                        text-decoration: none;
+                        font-size: 24px;
+                        line-height: 29px;
+                        font-weight: 500;
+                        color: #fff;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                h2:hover{
+                    a{
+                        color: rgb(255, 3, 3);
+                        transition: 0.3s all ease-in-out;
+                    }
+                }
+
+                p{
+                    a{
+                        text-decoration: none;
+                        font-size: 18px;
+                        line-height: 27px;
+                        font-weight: 500;
+                        font-style: italic;
+                        color: #fff;
+                        transition: 0.3s all ease-in-out;
+                    }
+                }
+                p:hover{
+                    a{
+                        color: rgb(255, 3, 3);
+                        transition: 0.3s all ease-in-out;
+                    }
+                }
+            }
+        }
+
+        .blog-header-card::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+    }
+}
