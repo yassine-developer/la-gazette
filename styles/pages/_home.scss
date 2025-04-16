@@ -882,6 +882,26 @@ footer::before {
             .blog-todays-post {
                 margin-top: 0;
                 grid-column: 1;
+                display: grid;
+                gap: 20px;
+               
+            
+                .todays-post-card{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    gap: 20px;
+                    align-items: start;
+                    img{
+                        height: 315px;
+                        object-fit: cover;
+                    }
+
+                    .todays-post-card-text{
+                        margin-top: 0;
+                        grid-column: span 2;
+                        // align-self: start;
+                    }
+                }
             }
             .blog-regular{
                 display: grid;
